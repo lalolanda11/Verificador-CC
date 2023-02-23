@@ -13,7 +13,7 @@
 		-c para generar el cvv aleatorio
 		-f para generar la fecha aleatoriamente
 		-d para checar la procedencia del bin
-	</p>
+</p>
   
 	ejemplo python3 get.py -b 123456789xxxxxxx -l 666 -d -f
 <br> metodo de empleo </br>
