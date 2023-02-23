@@ -20,5 +20,5 @@
 <h2>python3 get.py -b 123456789xxxxxxx -l 20 -c -f<h2/>
 <p> instale la interface grafica con el con el comando :
 sudo make install 
-
+	</p>
   <h3>python3  get.py  -h para obtener mas informacion</h3>
