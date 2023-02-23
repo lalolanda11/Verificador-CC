@@ -15,7 +15,9 @@
 		-d para checar la procedencia del bin
 </p>
   
+<p> 
 	ejemplo python3 get.py -b 123456789xxxxxxx -l 666 -d -f
+</p>
 <br> metodo de empleo </br>
 <h2>python3 get.py -b 123456789xxxxxxx -l 20 -c -f<h2/>
 <p> instale la interface grafica con el con el comando :
