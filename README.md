@@ -4,7 +4,7 @@
 <h1><span>XELA-STONE</span></h1>
 <p>Esto es con fines de educacion</p>
 
-<p>este es un menu informativo
+<p>este es un menu informativo para usarlo desde terminal
 		
 		seleccione los siguentes comandos
 		-h para imprimir el mensaje de ayuda
@@ -18,4 +18,7 @@
 	ejemplo python3 get.py -b 123456789xxxxxxx -l 666 -d -f
 <br> metodo de empleo </br>
 <h2>python3 get.py -b 123456789xxxxxxx -l 20 -c -f<h2/>
+<p> instale la interface grafica con el con el comando :
+sudo make install 
+
   <h3>python3  get.py  -h para obtener mas informacion</h3>
