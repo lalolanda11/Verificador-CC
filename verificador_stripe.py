@@ -94,6 +94,7 @@ while True:
     if req.status_code == 200:
         #with open("vivas.txt","w") as f:
             vivas.write(cc+"|"+mes+"|"+ano+"|"+cvc))
+            vivas.write("\n")
             vivas.flush()
     else:
         pass
