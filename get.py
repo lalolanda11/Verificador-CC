@@ -78,16 +78,17 @@ def generador(bincc):
 
 		for s in range(10):
 			check=cc
-			check=check+str(s)
+			check=check[:15]+str(s)
 			if luhn(check):
 				if len(check) == 16:
 
 					cc=check
 					break
 			else:
-				if len(check) == 16:
-					check=cc
-				#print(cc)
+#				if len(check) == 16:
+#					check=cc
+				continue
+			#print(cc)
 	return(cc)
 #generador()
 def seguridad():
@@ -107,7 +108,7 @@ def dato():
 		mes='0'+mes
 	cont=str(tiempo.year)
 	anio=str(r(int(cont[-2:])+1,int(cont[-2:])+6))
-	dato=mes+'|'+anio
+	dato=mes+'|'+"20"+anio
 	return(dato)
 #fecha()
 def main(argv):
@@ -120,7 +121,7 @@ def main(argv):
 			#print(lista[i])
 
 			if cvv and fecha:
-				lista.append(generador(bincc)+ '|' +seguridad()+ '|' +dato())
+				lista.append(generador(bincc)+ '|' +dato()+ '|' +seguridad())
 				print(lista[i])
 			elif cvv and not fecha:
 				lista.append(generador(bincc)+ '|' +seguridad())
