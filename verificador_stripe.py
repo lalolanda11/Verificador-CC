@@ -1,15 +1,14 @@
-
-
-
-
-
-
+#Este verificador no verifica el cvc
+#Solo verifica la cc sin cobro 
+#x3las70n3
 
 import requests
 import json
 from time import sleep
 vivas=open("vivas.txt","a")
 
+#Esta funcion lee los archivos que se encuentran en el archivo bin.txt
+#Asegurate que el formato de los bines generados sea el correcto 
 
 def datos(cont):
     dato=open("bin.txt","r")
@@ -17,6 +16,9 @@ def datos(cont):
     con=len(leer)-cont
     cc=leer[con]
     return cc,con
+#Este bucle va a verificar la cantidad de cc generadas y cuando se acabe la lista terminara y guardara
+#los archivos en un formato llamado vivas.txt
+
 n=1
 while True:
 #    n=1
@@ -51,7 +53,8 @@ while True:
         "Sec-Fetch-Site": "same-site"
 
         }
-
+#Esta es la respuesta que se le enviara al servidor
+#
     data={
         "type":"card",
         "amount":"300",
