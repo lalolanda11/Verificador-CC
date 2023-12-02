@@ -1,5 +1,5 @@
 # generador-bin
-
+#El script verificador_stripe hace una petición a la api de cobro stripe y te arroja en un documento las tareas verificadas 
 <p>Este es un generador de tarjetas varificadas con el algoritmo mod 10</p>
 <h1><span>XELA-STONE</span></h1>
 <p>Esto es con fines de educacion</p>
