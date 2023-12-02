@@ -23,4 +23,4 @@
 <p> instale la interface grafica con el con el comando :
 sudo make install 
 	</p>
-  <h3>python3  get.py  -h para obtener mas informacion</h3>
+  <h1>python3  get.py  -h para obtener mas informacion</h1>
