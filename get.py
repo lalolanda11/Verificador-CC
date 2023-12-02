@@ -3,7 +3,7 @@ from random import randint as r
 import datetime
 import time
 import os
-
+#Esta funcion imprime el menu en consola con las opciones 
 def menu():
 	print(time.ctime(),'-> hello, my name is xela-stone')
 	baner='''
@@ -22,7 +22,8 @@ def menu():
 	
 	'''
 	print(baner)
-
+	
+#Esta es una funcion de análisis de opcion de linea de comandos 
 def met(argv):
 	cvv=False
 	fecha=False
@@ -50,7 +51,7 @@ def met(argv):
 		
 	return(bincc,limite,cvv,fecha)
 
-
+#Es un verificador que detecta el error de unico dígito 
 def luhn(num):
 	#num='42131661'
 	sum=0
@@ -66,6 +67,8 @@ def luhn(num):
 	return((sum%10)==0)
 #luhn()
 
+#Es el generador de los 16 numero de la tarjeta de crédito 
+#No genera tarjetas amex solo master y visa
 def generador(bincc):
 #	bincc=input('')
 	cc=''
@@ -90,6 +93,7 @@ def generador(bincc):
 				#print(cc)
 	return(cc)
 #generador()
+#Esta funcion genera el cvv aleatorio de 3 digitos.
 def seguridad():
 	cvv=''
 	var=r(10,999)
@@ -98,7 +102,8 @@ def seguridad():
 	else:
 		cvv=str(var)
 	return(cvv)
-	
+
+#En esta función generamos la fecha y año de las tarjtas	
 def dato():
 	tiempo=datetime.datetime.now()
 	dato=''
@@ -110,6 +115,7 @@ def dato():
 	dato=mes+'|'+anio
 	return(dato)
 #fecha()
+#Esta es la funcion principal 
 def main(argv):
 	lista=[]
 	(bincc,limite,cvv,fecha)=met(argv)
