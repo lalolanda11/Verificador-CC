@@ -112,7 +112,7 @@ def dato():
 		mes='0'+mes
 	cont=str(tiempo.year)
 	anio=str(r(int(cont[-2:])+1,int(cont[-2:])+6))
-	dato=mes+'|'+anio
+	dato=mes+'|'+'20'+anio
 	return(dato)
 #fecha()
 #Esta es la funcion principal 
@@ -126,7 +126,7 @@ def main(argv):
 			#print(lista[i])
 
 			if cvv and fecha:
-				lista.append(generador(bincc)+ '|' +seguridad()+ '|' +dato())
+				lista.append(generador(bincc)+ '|' +dato()+ '|' +seguridad())
 				print(lista[i])
 			elif cvv and not fecha:
 				lista.append(generador(bincc)+ '|' +seguridad())
